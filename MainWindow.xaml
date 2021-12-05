@@ -7,13 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button 
+        <ComboBox 
             Name="Button0" Margin="10,10,630,345"
-            
             />
 
+        <ListView Name="ListView" Width="200" Height="200">
+            <TextBox Name="TextBoxFolderName" Width="100" Height="100"
+                     >
+                
+            </TextBox>
+            
+        </ListView>
+        
         <Button
             Name="FolderSelect0"
-            Content="FolderSelect0" Margin="290,177,400,139" Click="FolderSelect0_Click"/>
+            Content="FolderSelect0" Margin="400,93,290,273" Click="FolderSelect0_Click"/>
     </Grid>
 </Window>

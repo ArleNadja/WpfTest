@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace WpfTest
 {
     /// <summary>
-    /// 便利関数群
+    /// wpfで使える便利関数群
     /// </summary>
     public static class Util
     {

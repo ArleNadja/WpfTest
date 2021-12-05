@@ -21,13 +21,23 @@ namespace WpfTest
     /// </summary>
     public partial class MainWindow : Window
     {
-        #region 非公開フィールド
+        private enum ModeType
+        {
+            CopyTest,
+            CopyFile,
+        }
 
+        #region 非公開フィールド
+        private Dictionary<ModeType, string> Binding { get; set; } = new Dictionary<ModeType, string>() {
+            { ModeType.CopyFile, nameof(ModeType.CopyFile) }
+        };
         #endregion
 
         public MainWindow()
         {
             InitializeComponent();
+
+
         }
 
         /// <summary>
